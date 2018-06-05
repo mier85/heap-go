@@ -34,10 +34,6 @@ type Heap struct {
 	lookup map[reflect.Value]int
 }
 
-type Option struct {
-
-}
-
 func NewHeap(compareFn interface{}) (*Heap, error) {
 	h := &Heap{
 		objects:make([]reflect.Value, 0),
